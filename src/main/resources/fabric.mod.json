@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "bjhelper",
+  "version": "${version}",
+  "name": "Blackjack Helper",
+  "description": "Tracks a 9-slot blackjack Dropper and chooses a card according to Viewer/Host mode.",
+  "authors": ["OpenAI"],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.bjhelper.BlackjackHelperClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "1.21.11",
+    "fabric-api": "*"
+  }
+}
