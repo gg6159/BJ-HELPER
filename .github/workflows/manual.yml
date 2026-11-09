@@ -20,9 +20,11 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.9'
 
       - name: Build
-        run: ./gradlew build
+        run: gradle build
         env:
           GRADLE_OPTS: "-Xmx4g"
 
